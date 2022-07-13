@@ -1,0 +1,23 @@
+{
+  "name": "explain-pnpm",
+  "version": "1.0.0",
+  "description": "try to explain the  link detail of pnpm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardfist/explain-pnpm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardfist/explain-pnpm/issues"
+  },
+  "homepage": "https://github.com/hardfist/explain-pnpm#readme",
+  "dependencies": {
+    "express": "4.18.1"
+  }
+}
