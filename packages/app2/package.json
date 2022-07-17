@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "foo": "workspace:*",
+    "pnpm-foo": "1.0.0",
     "foo-peer": "2.0.0"
   }
 }

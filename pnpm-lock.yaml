@@ -5,24 +5,29 @@ importers:
   .:
     specifiers: {}
 
+  packages/app:
+    specifiers:
+      app1: worksapce
+      app2: workspace
+    dependencies:
+      app1: link:../app1
+      app2: link:../app2
+
   packages/app1:
     specifiers:
-      foo: workspace:*
       foo-peer: 1.0.0
+      pnpm-foo: 1.0.0
     dependencies:
-      foo: link:../foo
       foo-peer: 1.0.0
+      pnpm-foo: 1.0.0_foo-peer@1.0.0
 
   packages/app2:
     specifiers:
-      foo: workspace:*
       foo-peer: 2.0.0
+      pnpm-foo: 1.0.0
     dependencies:
-      foo: link:../foo
       foo-peer: 2.0.0
-
-  packages/foo:
-    specifiers: {}
+      pnpm-foo: 1.0.0_foo-peer@2.0.0
 
 packages:
 
@@ -32,4 +37,26 @@ packages:
 
   /foo-peer/2.0.0:
     resolution: {integrity: sha512-F7S0uo2MwztykOINyIlz+vWaJ/qklnY02Q66QeC4eEs26wsPGFu/DEl+VJPZ/tOf44WlczXxHEuNolfEI++FBQ==}
+    dev: false
+
+  /pnpm-foo/1.0.0_foo-peer@1.0.0:
+    resolution: {integrity: sha512-ZsQm7tH7S7Zjm0ml+VdnleuPX+c0rLbEMX2vcd7kePRfh6MPLMuSE7GYJCkQuQ2l5iyIE5nQpBIN33J/gpjmfg==}
+    peerDependencies:
+      foo-peer: '*'
+    dependencies:
+      foo-peer: 1.0.0
+      the-answer: 1.0.0
+    dev: false
+
+  /pnpm-foo/1.0.0_foo-peer@2.0.0:
+    resolution: {integrity: sha512-ZsQm7tH7S7Zjm0ml+VdnleuPX+c0rLbEMX2vcd7kePRfh6MPLMuSE7GYJCkQuQ2l5iyIE5nQpBIN33J/gpjmfg==}
+    peerDependencies:
+      foo-peer: '*'
+    dependencies:
+      foo-peer: 2.0.0
+      the-answer: 1.0.0
+    dev: false
+
+  /the-answer/1.0.0:
+    resolution: {integrity: sha1-bbxMnbRp1PQ3EgsJ5EcA/DIPFws=}
     dev: false

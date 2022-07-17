@@ -1,2 +1,2 @@
-const { version } = require('foo');
+const { version } = require('pnpm-foo');
 console.log({version});
