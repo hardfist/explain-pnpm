@@ -1,16 +1,15 @@
 {
-  "name": "app1",
+  "name": "foo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "foo": "workspace:*",
-    "foo-peer": "1.0.0"
+  "peerDependencies": {
+    "foo-peer": "*"
   }
 }

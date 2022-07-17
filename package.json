@@ -16,22 +16,5 @@
   "bugs": {
     "url": "https://github.com/hardfist/explain-pnpm/issues"
   },
-  "homepage": "https://github.com/hardfist/explain-pnpm#readme",
-  "dependencies": {
-    "express": "4.18.1",
-    "koa": "2.13.4",
-    "webpack-cli": "4.10.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "debug": "4.3.4"
-    },
-    "packageExtensions": {
-      "webpack-cli": {
-        "peerDependencies": {
-          "ts-node": "*"
-        }
-      }
-    }
-  }
+  "homepage": "https://github.com/hardfist/explain-pnpm#readme"
 }

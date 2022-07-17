@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/react": "18.0.5"
+    "foo": "workspace:*",
+    "foo-peer": "2.0.0"
   }
 }
