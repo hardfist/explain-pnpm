@@ -21,8 +21,11 @@ importers:
       button: workspace:*
       react: 17.0.0
     dependencies:
-      button: link:../button
+      button: file:apps/button_react@17.0.0
       react: 17.0.0
+    dependenciesMeta:
+      button:
+        injected: true
 
   packages/app:
     specifiers:
@@ -112,4 +115,15 @@ packages:
 
   /the-answer/1.0.0:
     resolution: {integrity: sha1-bbxMnbRp1PQ3EgsJ5EcA/DIPFws=}
+    dev: false
+
+  file:apps/button_react@17.0.0:
+    resolution: {directory: apps/button, type: directory}
+    id: file:apps/button
+    name: button
+    version: 1.0.0
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 17.0.0
     dev: false

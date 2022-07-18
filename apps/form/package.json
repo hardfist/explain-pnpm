@@ -12,5 +12,10 @@
   "dependencies": {
     "react": "17.0.0",
     "button": "workspace:*"
+  },
+  "dependenciesMeta": {
+    "button": {
+      "injected": true
+    }
   }
 }
