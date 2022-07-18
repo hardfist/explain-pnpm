@@ -1,0 +1,16 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "esbuild": "esbuild index.js --bundle"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "17.0.0",
+    "button": "workspace:*"
+  }
+}

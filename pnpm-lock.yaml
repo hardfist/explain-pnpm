@@ -5,6 +5,25 @@ importers:
   .:
     specifiers: {}
 
+  apps/button:
+    specifiers: {}
+
+  apps/card:
+    specifiers:
+      button: workspace:*
+      react: ^16.0.0
+    dependencies:
+      button: link:../button
+      react: 16.14.0
+
+  apps/form:
+    specifiers:
+      button: workspace:*
+      react: 17.0.0
+    dependencies:
+      button: link:../button
+      react: 17.0.0
+
   packages/app:
     specifiers:
       app1: worksapce
@@ -37,6 +56,22 @@ packages:
     resolution: {integrity: sha512-lTHtr83GZm3vo8VJsmk6c5rPAWXSWoy8VvjCNmy+WOi9GenV2QNcLKxIwLSX5VfnRt4r32JA8MQXZWznQ1HfbQ==}
     dev: false
 
+  /js-tokens/4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+
+  /object-assign/4.1.1:
+    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /pnpm-foo/1.0.0_foo-peer@1.0.0:
     resolution: {integrity: sha512-ZsQm7tH7S7Zjm0ml+VdnleuPX+c0rLbEMX2vcd7kePRfh6MPLMuSE7GYJCkQuQ2l5iyIE5nQpBIN33J/gpjmfg==}
     peerDependencies:
@@ -44,6 +79,35 @@ packages:
     dependencies:
       foo-peer: 1.0.0
       the-answer: 1.0.0
+    dev: false
+
+  /prop-types/15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react/16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+    dev: false
+
+  /react/17.0.0:
+    resolution: {integrity: sha512-rG9bqS3LMuetoSUKHN8G3fMNuQOePKDThK6+2yXFWtoeTDLVNh/QCaxT+Jr+rNf4lwNXpx+atdn3Aa0oi8/6eQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
     dev: false
 
   /the-answer/1.0.0:
