@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "app1": "worksapce",
-    "app2": "workspace"
+    "app2": "workspace",
+    "foo-peer": "1.0.0"
   }
 }
